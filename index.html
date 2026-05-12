@@ -1,100 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aaron Smith | Associate Professor</title>
-    <style>
-        /* Basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aaron Smith | Probability and Computational Statistics</title>
+  <meta name="description" content="Aaron Smith, Associate Professor at the University of Ottawa, working on probability theory, computational statistics, Markov chains, Monte Carlo methods, embeddings, and applied data problems.">
+  <style>
+    :root {
+      --background: #fff;
+      --text: #222;
+      --muted: #666;
+      --border: #ddd;
+      --link: #0645ad;
+      --max-width: 740px;
+    }
 
-        header, footer {
-            background-color: #444;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
 
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+    .page {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem 1.25rem 2rem;
+    }
 
-        section {
-            margin-bottom: 2rem;
-        }
+    header {
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+    }
 
-        h2 {
-            font-size: 1.5rem;
-            color: #444;
-        }
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: clamp(2rem, 8vw, 2.55rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
 
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
+    h2 {
+      margin: 2rem 0 0.6rem;
+      font-size: 1.25rem;
+      line-height: 1.25;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    p {
+      margin: 0.65rem 0;
+    }
 
-        footer p {
-            font-size: 0.9rem;
-        }
-    </style>
+    ul {
+      margin: 0.65rem 0;
+      padding-left: 1.25rem;
+    }
+
+    li {
+      margin: 0.35rem 0;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration-thickness: 0.12em;
+    }
+
+    .subtitle,
+    footer {
+      color: var(--muted);
+    }
+
+    .summary {
+      margin-top: 1.35rem;
+      font-size: 1.05rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.75rem;
+      margin-top: 1rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 2.25rem;
+      padding-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      .page {
+        padding-top: 2rem;
+      }
+
+      .links {
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+    }
+  </style>
 </head>
 <body>
-
-    <!-- Header -->
+  <div class="page">
     <header>
-        <h1>Aaron Smith</h1>
-        <p>Associate Professor, University of Ottawa | Researcher, TIMC</p>
+      <h1>Aaron Smith</h1>
+      <p class="subtitle">Associate Professor, University of Ottawa · Researcher, Tutte Institute for Mathematics and Computing (TIMC)</p>
+      <p class="summary">I work on probability theory, computational statistics, Markov chains, Monte Carlo methods, embeddings, and applied data problems.</p>
+      <nav class="links" aria-label="Contact and profiles">
+        <a href="https://scholar.google.ca/citations?user=MDeFF4AAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://www.uottawa.ca/faculty-science/professors/aaron-smith">uOttawa profile</a>
+      </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
+      <section id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research interests</h2>
+        <p>I am generally interested in probability theory and computational statistics. Some clusters of research projects include:</p>
+        <ul>
+          <li>Markov chains in statistical physics.</li>
+          <li>Markov chain Monte Carlo and related methods in computational statistics.</li>
+          <li>Links between random matrices, embeddings, and rankings.</li>
+        </ul>
+        <p>At the time of writing (Spring 2026), I am also quite interested in the statistical properties and robustness of unsupervised and semisupervised embeddings. I enjoy collaborating on applied problems in statistics and machine learning, with particular interest in cybersecurity.</p>
+      </section>
 
-        <!-- Research Interests Section -->
-        <section id="research">
-            <h2>Research Interests</h2>
-            <p>I am generally interested in probability theory and computational statistics. Some clusters of research projects include:</p>
-            <ul>
-                <li>Markov chains in statistical physics.</li>
-                <li>Markov chain Monte Carlo and related methods in computational statistics.</li>
-                <li>Links between Random matrices, embeddings, and rankings.</li>
-            </ul>
-At the time of writing (Spring 2026), I'm also quite interested in work related to the statistical properties and robustness of unsupervised and semisupervised embeddings. I enjoy collaborating on applied problems in statistics and machine learning, with particular interest in cybersecurity.
-        </section>
+      <section id="publications" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Publications</h2>
+        <p>A largely complete list of my publications is available on <a href="https://scholar.google.ca/citations?user=MDeFF4AAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
+      </section>
 
-        <!-- Publications Section -->
-        <section id="publications">
-            <h2>Publications</h2>
-            <p>A largely-complete list of my publications is available on <a href="https://scholar.google.ca/citations?user=MDeFF4AAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
-        </section>
-
-        <!-- Collaboration Section -->
-        <section id="collaboration">
-            <h2>Opportunities and Collaboration</h2>
-Please reach out at: asmi28@uottawa.ca.
-            <ul>
-                <li> I have funding available for recruiting graduate students and postdocs, either as a sole supervisor in an area related to my previous interests or (even better) as a cosupervisor in an area connected to these interests.  I encourage prospective students to get in touch with current students if they are interested in attending uOttawa - if you tell me your interests, I will try to find somebody with similar interests to talk to. </li>
-                <li> I am almost always interested in finding applied collaborations.</li>
-                <li> Much of my research, especially on Markov chains and on statistical work with embeddings, is fairly accessible to undergraduates. If you are thinking of undergraduate research, please reach out with a quick description of your interests.</li>
-            </ul>
-        </section>
+      <section id="opportunities" aria-labelledby="opportunities-heading">
+        <h2 id="opportunities-heading">Opportunities and collaboration</h2>
+        <p>Please reach out at <a href="mailto:asmi28@uottawa.ca">asmi28@uottawa.ca</a>.</p>
+        <ul>
+          <li><strong>Graduate students and postdocs:</strong> I have funding available for projects related to my research interests, especially through co-supervision. Prospective students are welcome to get in touch; if you tell me your interests, I will try to connect you with a current student with related interests.</li>
+          <li><strong>Applied collaborations:</strong> I am almost always interested in applied collaborations in statistics, machine learning, and related areas.</li>
+          <li><strong>Undergraduates:</strong> Much of my research, especially on Markov chains and statistical work with embeddings, is accessible to motivated undergraduate students. Please reach out with a quick description of your interests.</li>
+        </ul>
+      </section>
     </main>
 
+    <footer>
+      <p>Last updated: Spring 2026.</p>
+    </footer>
+  </div>
 </body>
 </html>
