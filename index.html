@@ -6,110 +6,110 @@
   <title>Aaron Smith | Probability and Computational Statistics</title>
   <meta name="description" content="Aaron Smith, Associate Professor at the University of Ottawa, working on probability theory, computational statistics, Markov chains, Monte Carlo methods, embeddings, and applied statistics.">
   <style>
-    :root {
-      --background: #fff;
-      --text: #222;
-      --muted: #666;
-      --border: #ddd;
-      --link: #0645ad;
-      --max-width: 740px;
-    }
+  :root {
+    --background: #fff;
+    --text: #222;
+    --muted: #666;
+    --border: #ddd;
+    --link: #0645ad;
+    --max-width: 740px;
+  }
 
-    * {
-      box-sizing: border-box;
-    }
+  * {
+    box-sizing: border-box;
+  }
 
-    body {
-      margin: 0;
-      background: var(--background);
-      color: var(--text);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.62;
-    }
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.62;
+  }
 
+  .page {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 3rem 1.25rem 2rem;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+    padding-bottom: 1.25rem;
+  }
+
+  h1 {
+    margin: 0 0 0.35rem;
+    font-size: clamp(2rem, 8vw, 2.55rem);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+
+  h2 {
+    margin: 2rem 0 0.6rem;
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
+
+  p {
+    margin: 0.65rem 0;
+  }
+
+  ul {
+    margin: 0.65rem 0;
+    padding-left: 1.25rem;
+  }
+
+  li {
+    margin: 0.35rem 0;
+  }
+
+  a {
+    color: var(--link);
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.15em;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration-thickness: 0.12em;
+  }
+
+  .subtitle,
+  footer {
+    color: var(--muted);
+  }
+
+  .summary {
+    margin-top: 1.35rem;
+    font-size: 1.05rem;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+    margin-top: 1rem;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    margin-top: 2.25rem;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 480px) {
     .page {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 3rem 1.25rem 2rem;
-    }
-
-    header {
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 2rem;
-      padding-bottom: 1.25rem;
-    }
-
-    h1 {
-      margin: 0 0 0.35rem;
-      font-size: clamp(2rem, 8vw, 2.55rem);
-      line-height: 1.1;
-      letter-spacing: -0.03em;
-    }
-
-    h2 {
-      margin: 2rem 0 0.6rem;
-      font-size: 1.25rem;
-      line-height: 1.25;
-    }
-
-    p {
-      margin: 0.65rem 0;
-    }
-
-    ul {
-      margin: 0.65rem 0;
-      padding-left: 1.25rem;
-    }
-
-    li {
-      margin: 0.35rem 0;
-    }
-
-    a {
-      color: var(--link);
-      text-decoration-thickness: 0.08em;
-      text-underline-offset: 0.15em;
-    }
-
-    a:hover,
-    a:focus {
-      text-decoration-thickness: 0.12em;
-    }
-
-    .subtitle,
-    footer {
-      color: var(--muted);
-    }
-
-    .summary {
-      margin-top: 1.35rem;
-      font-size: 1.05rem;
+      padding-top: 2rem;
     }
 
     .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.35rem 0.75rem;
-      margin-top: 1rem;
+      flex-direction: column;
+      gap: 0.25rem;
     }
-
-    footer {
-      border-top: 1px solid var(--border);
-      margin-top: 2.25rem;
-      padding-top: 1rem;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 480px) {
-      .page {
-        padding-top: 2rem;
-      }
-
-      .links {
-        flex-direction: column;
-        gap: 0.25rem;
-      }
-    }
+  }
   </style>
 </head>
 <body>
@@ -117,7 +117,9 @@
     <header>
       <h1>Aaron Smith</h1>
       <p class="subtitle">Associate Professor, University of Ottawa · Researcher, Tutte Institute for Mathematics and Computing (TIMC)</p>
+
       <p class="summary">I work on probability theory, computational statistics, Markov chains, Monte Carlo methods, embeddings, and applied data problems.</p>
+
       <nav class="links" aria-label="Contact and profiles">
         <a href="https://scholar.google.ca/citations?user=MDeFF4AAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
         <a href="https://www.uottawa.ca/faculty-science/professors/aaron-smith">uOttawa profile</a>
@@ -127,12 +129,15 @@
     <main>
       <section id="research" aria-labelledby="research-heading">
         <h2 id="research-heading">Research interests</h2>
+
         <p>I am generally interested in probability theory and computational statistics. Some clusters of research projects include:</p>
+
         <ul>
           <li>Markov chains in statistical physics.</li>
           <li>Markov chain Monte Carlo and related methods in computational statistics.</li>
           <li>Links between random matrices, embeddings, and rankings.</li>
         </ul>
+
         <p>At the time of writing (Spring 2026), I am also quite interested in the statistical properties and robustness of unsupervised and semisupervised embeddings. I enjoy collaborating on applied problems in statistics and machine learning, with particular interest in cybersecurity.</p>
       </section>
 
@@ -143,7 +148,9 @@
 
       <section id="opportunities" aria-labelledby="opportunities-heading">
         <h2 id="opportunities-heading">Opportunities and collaboration</h2>
+
         <p>Please reach out at <a href="mailto:asmi28@uottawa.ca">asmi28@uottawa.ca</a>.</p>
+
         <ul>
           <li><strong>Graduate students and postdocs:</strong> I have funding available for projects related to my research interests, especially through co-supervision. Prospective students are welcome to get in touch; if you tell me your interests, I will try to connect you with a current student with related interests.</li>
           <li><strong>Applied collaborations:</strong> I am almost always interested in applied collaborations in statistics, machine learning, and related areas.</li>
@@ -152,8 +159,8 @@
       </section>
 
       <section id="advice" aria-labelledby="advice-heading">
-        <h2 id="publications-heading">Advice and Links</h2>
-        <p> I link to some pages on grad school and probability that I've enjoyed <a href="advice.html">here</a>.</p> Further interesting links appreciated.
+        <h2 id="advice-heading">Advice and links</h2>
+        <p>I link to some pages on grad school and probability that I have enjoyed <a href="advice.html">here</a>. Further interesting links are appreciated.</p>
       </section>
     </main>
 
